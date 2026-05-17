@@ -1,8 +1,6 @@
 import java.util.Random;
 
 // Automated Minesweeper bot.
-// In this version, the bot is intentionally random because the assignment asks for random unrevealed cells
-// which leads to disproportional winrate.
 public class Player {
     private final Board board;
     private final MyLinkedList moveHistory;

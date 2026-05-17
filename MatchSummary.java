@@ -50,8 +50,6 @@ public class MatchSummary implements Comparable<MatchSummary> {
         if (byTime != 0) {
             return byTime;
         }
-
-        // Important TreeSet detail:
         // If two matches have the same time, compare by matchId too.
         // Otherwise TreeSet may think they are duplicates and remove one.
         return Integer.compare(this.matchId, other.matchId);

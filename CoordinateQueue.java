@@ -1,8 +1,5 @@
 // Custom FIFO queue used by Board.revealCell() for BFS cascade reveal.
-// IMPORTANT: This class does NOT use java.util collections or native arrays.
 public class CoordinateQueue {
-
-    // Public return type for dequeue().
     // We use this instead of int[] so the queue still avoids native arrays.
     public static final class Coordinate {
         private final int row;
